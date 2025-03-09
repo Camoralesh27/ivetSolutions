@@ -50,7 +50,7 @@
     <!-- ======= nav Desktop ======= -->
     <nav class="nav">  
         <div class="nav__logo">
-            <a href="#inicio" class="nav__logo-link">
+            <a href="#home" class="nav__logo-link">
                 <img src="./build/img/logo.png" alt="Logo" class="nav__logo-img">
 
                 <p class="nav__logo-text">IvetSolutions</p>
@@ -133,24 +133,24 @@
             
             <div class="feature">   
                 <div class="feature__icon">
-                    <img src="./build/img/icon_pig.svg" alt="pig" class="feature__icon-img">
+                    <img src="./build/img/icon_save.svg" alt="pig" class="feature__icon-img">
                 </div>
 
                 <h3 class="feature__title">Precios 
                     Competitivos</h3>
 
-                <p class="feature__text">Ofrecemos los mejores precios del mercado sin comprometer la calidad.</p>
+                <p class="feature__text">Ofrecer descuentos por volumen y promociones especiales.</p>
 
             </div>
 
             <div class="feature">   
                 <div class="feature__icon">
-                    <img src="./build/img/icon_discount.svg" alt="discount" class="feature__icon-img">
+                    <img src="./build/img/icon_deliver.svg" alt="discount" class="feature__icon-img">
                 </div>
 
-                <h3 class="feature__title">Promociones exclusivas</h3>
+                <h3 class="feature__title">Entrega Express </h3>
 
-                <p class="feature__text">Descuentos especiales en productos seleccionados cada mes.</p>
+                <p class="feature__text">Opciones de entrega el mismo día o en 24 horas en zonas específicas.</p>
 
             </div>
 
@@ -159,9 +159,9 @@
                     <img src="./build/img/icon_hands.svg" alt="hands" class="feature__icon-img">
                 </div>
 
-                <h3 class="feature__title">Proveedores de confianza</h3>
+                <h3 class="feature__title">Calidad Certificada </h3>
 
-                <p class="feature__text">Trabajamos con las mejores marcas y fabricantes del sector para garantizar la calidad que mereces.</p>
+                <p class="feature__text">Los productos cumplen con normas de seguridad nacionales e internacionales (como ANSI, OSHA, NOM).</p>
 
             </div>
 
@@ -172,7 +172,7 @@
 
     <!-- ======= products ======= -->
     <section class="products" id="productos">
-        <div class="product__box">
+        <div class="products__box">
             <h2 class="products__heading">Nuestros <span class="products__heading--blue"></span> Productos</h2>
 
             <div class="products__line"></div>
@@ -181,7 +181,12 @@
         <div class="products__grid">
             <a href="seguridad.html">
                 <div class="product">
-                    <img src="./build/img/seguridad.jpg" alt="seguridad" class="product__img">
+                    <picture class="product__img" >
+                        <source srcset="./build/img/seguridad.avif" type="image/avif">
+                        <source srcset="./build/img/seguridad.webp" type="image/webp">
+                        <img src="./build/img/seguridad.jpg" alt="seguridad" loading="lazy">
+                    </picture>
+
                     <div class="product__info">
                         <h3 class="product__title">Seguridad Industrial</h3>
     
@@ -193,7 +198,13 @@
             
             <a href="herramientas.html">
                 <div class="product">
-                    <img src="./build/img/herramientas.jpg" alt="herramientas" class="product__img" loading="lazy">
+                    <picture class="product__img" >
+                        <source srcset="./build/img/herramientas.avif" type="image/avif">
+                        <source srcset="./build/img/herramientas.webp" type="image/webp">
+                        <img src="./build/img/herramientas.jpg" alt="herramientas" loading="lazy">
+                    </picture>
+
+                    
     
                     <div class="product__info">
                         <h3 class="product__title">Herramientas Industriales</h3>
@@ -206,7 +217,7 @@
         </div>
 
         <div class="products__button">
-            <a href="productos.html" class="products__button-link">¡Cotiza ahora tú proyecto!</a>
+            <a href="#contacto" class="products__button-link">¡Cotiza ahora tú proyecto!</a>
         </div>
     </section>
 
@@ -289,43 +300,49 @@
 
     <!-- ======= contact ======= -->
     <section class="contact" id="contacto">
-        <div class="contact__box">
-            <h2 class="contact__heading">Aquí estamos para ti,<br><span class="contact__heading--yellow"> ¡Contactanos!</span></h2>
+        <div class="contact__overlay"></div>
 
-            <!-- <div class="contact__line"></div> -->
-
-            <p class="contact__subtitle">¿Tienes alguna duda sobre nuestros servicios ó solo quieres hablar? 
-                 <br> <span class="contact__subtitle--bold">¡Mandanos un mensaje ó llámanos ahora para ayudarte!</span></p>    
-        </div>
-
-        <div class="contact__grid contenedor">
-            <div class="contact__item">
-                <h3 class="contact__title">Ubicación</h3>
-
-                <p class="contact__text">Chihuahua, Chih.</p>
+        <div class="contact__content">
+            <div class="contact__box">
+                <h2 class="contact__heading">Aquí estamos para ti,<br><span class="contact__heading--yellow"> ¡Contactanos!</span></h2>
+    
+                <!-- <div class="contact__line"></div> -->
+    
+                <p class="contact__subtitle">¿Tienes alguna duda sobre nuestros servicios ó solo quieres hablar? 
+                     <br> <span class="contact__subtitle--bold">¡Mandanos un mensaje ó llámanos ahora para ayudarte!</span></p>    
+            </div>
+    
+            <div class="contact__grid contenedor">
+                <div class="contact__item">
+                    <h3 class="contact__title">Ubicación</h3>
+    
+                    <p class="contact__text">Chihuahua, Chih.</p>
+                </div>
+    
+    
+                <div class="contact__item">
+                    <h3 class="contact__title">Contactanos</h3>
+    
+                    <p class="contact__text contact__text--bold">¡Llamanos ahora!</p>
+                    <a class="contact__text" href="tel: +52 (614) 606 4567">(614) 606 4567</a> 
+                    <a class="contact__text" href="tel: +52 (614) 169 9883">(614) 169 9883</a>
+                </div> 
+    
+    
+                <div class="contact__item">
+                    <h3 class="contact__title">Siguenos</h3>
+    
+                    <div class="contact__redes-sociales-grid">
+                        <a class="contact__redes-sociales-link" href="index.html" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        
+                        <a class="contact__redes-sociales-link" href="index.html#home" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    
+                </div> 
             </div>
 
-
-            <div class="contact__item">
-                <h3 class="contact__title">Contactanos</h3>
-
-                <p class="contact__text contact__text--bold">¡Llamanos ahora!</p>
-                <a class="contact__text" href="tel: +52 (614) 606 4567">(614) 606 4567</a> 
-                <a class="contact__text" href="tel: +52 (614) 169 9883">(614) 169 9883</a>
-            </div> 
-
-
-            <div class="contact__item">
-                <h3 class="contact__title">Siguenos</h3>
-
-                <div class="contact__redes-sociales-grid">
-                    <a class="contact__redes-sociales-link" href="index.html" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    
-                    <a class="contact__redes-sociales-link" href="index.html#home" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                
-            </div> 
         </div>
+        
 
     </section>
 
