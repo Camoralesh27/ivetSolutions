@@ -1,7 +1,7 @@
 {
-  "name": "warriorac",
+  "name": "ivettools",
   "version": "1.0.0",
-  "description": "landing page sobre WarriorAC",
+  "description": "Website sobre ivettools",
   "type": "module",
   "main": "gulpfile.js",
   "scripts": {

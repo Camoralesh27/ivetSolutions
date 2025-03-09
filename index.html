@@ -42,7 +42,7 @@
 
             <div class="header__info-phone">
                 <i class="fas fa-phone"></i>
-                <span class="header__info-phone-text"><span>Llamanos!</span> <a class="header__info-phone-number" href="tel: +52 (614) 606 4567">(614) 606 4567</a> </span>
+                <span class="header__info-phone-text"><span>¡Llamanos!</span> <a class="header__info-phone-number" href="tel: +52 (614) 606 4567">(614) 606 4567</a> </span>
             </div>
         </div>    
     </header>
@@ -53,15 +53,17 @@
             <a href="#inicio" class="nav__logo-link">
                 <img src="./build/img/logo.png" alt="Logo" class="nav__logo-img">
 
+                <p class="nav__logo-text">IvetSolutions</p>
+
                 
             </a>
         </div>
 
         <ul class="nav__links">
-            <li class="nav__links-item"><a href="index.html#inicio" class="nav__links-link">Inicio</a></li>
-            <li class="nav__links-item"><a href="index.html#productos" class="nav__links-link">Productos</a></li>
-            <li class="nav__links-item"><a href="index.html#testimoniales" class="nav__links-link">Testimoniales</a></li>
-            <li class="nav__links-item"><a href="index.html#contacto" class="nav__links-link">Contacto</a></li>
+            <li class="nav__links-item"><a href="#home" class="nav__links-link">Inicio</a></li>
+            <li class="nav__links-item"><a href="#productos" class="nav__links-link">Productos</a></li>
+            <li class="nav__links-item"><a href="#testimoniales" class="nav__links-link">Testimoniales</a></li>
+            <li class="nav__links-item"><a href="#contacto" class="nav__links-link">Contacto</a></li>
         </ul>
     </nav> 
 
@@ -70,6 +72,8 @@
         <div class="navM__data">
             <a class="navM__logo" href="#home">
                 <img class="navM__logo-img" src="./build/img/logo.png" alt="logo">
+
+                <p class="nav__logo-text">IvetSolutions</p>
             </a>
 
             <div class="navM__toggle" id="navM-toggle">
@@ -82,50 +86,27 @@
         <nav class="navM__menu" id="navM-menu">
             <ul class="navM__list">
                 <li class="navM__item">
-                    <a href="index.html#home" class="navM__link">Home</a>
+                    <a href="#home" class="navM__link">Inicio</a>
                 </li>
 
                 <li class="navM__item">
-                    <a href="index.html#about" class="navM__link">About us</a>
+                    <a href="#productos" class="navM__link">Productos</a>
                 </li>
 
                 <li class="navM__item">
-                    <a href="index.html#services" class="navM__link">Services</a>
+                    <a href="#testimoniales" class="navM__link">Testimoniales</a>
                 </li>
 
                 <li class="navM__item">
-                    <a href="index.html#reviews" class="navM__link">Reviews</a>
+                    <a href="#contacto" class="navM__link">Contacto</a>
                 </li>
 
                 <li class="navM__item">
-                    <a href="index.html#contact" class="navM__link">Contac us</a>
-                </li>
-
-                <li class="navM__item">
-                    <a href="prices.html" class="navM__link">Prices</a>
-                </li>
-
-                <div class="navM__buttons">
-                    <a href="index.html#contact" class="navM__button navM__link">
-                        Financing
-    
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-    
-                    <a href="index.html#contact" class="navM__button navM__link">
-                        Get a FREE Estimate!
-    
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-
-
-                <li class="navM__item">
-                    <a href="https://www.facebook.com/profile.php?id=100084471521194" target="_blank" class="navM__link">
+                    <a href="#home" target="_blank" class="navM__link">
                         <i class="fa-brands fa-facebook navM__icon"></i>
                     </a>
 
-                    <a href="https://www.instagram.com/warrior.hvac/" target="_blank" class="navM__link">
+                    <a href="#home" target="_blank" class="navM__link">
                         <i class="fa-brands fa-instagram navM__icon"></i>
                     </a>
                 </li>
@@ -136,25 +117,73 @@
     </div>
 
     <!-- ======= hero ======= -->
-     <main class="hero">
+    <section class="hero">
+        <div class="hero__overlay"></div>
         <div class="hero__content">
+            <h1 class="hero__title">Protege tu equipo, eleva tu seguridad</h1>
+            <p class="hero__subtitle">Encuentra las mejores herramientas y equipo de seguridad industrial.</p>
+            <a href="#contacto" class="hero__button">¡Contactanos!</a>
         </div>
-     </main>
+    </section>
+
+    <!-- ======= features ======= -->
+    <section class="features">
+
+        <div class="features__grid">
+            
+            <div class="feature">   
+                <div class="feature__icon">
+                    <img src="./build/img/icon_pig.svg" alt="pig" class="feature__icon-img">
+                </div>
+
+                <h3 class="feature__title">Precios 
+                    Competitivos</h3>
+
+                <p class="feature__text">Ofrecemos los mejores precios del mercado sin comprometer la calidad.</p>
+
+            </div>
+
+            <div class="feature">   
+                <div class="feature__icon">
+                    <img src="./build/img/icon_discount.svg" alt="discount" class="feature__icon-img">
+                </div>
+
+                <h3 class="feature__title">Promociones exclusivas</h3>
+
+                <p class="feature__text">Descuentos especiales en productos seleccionados cada mes.</p>
+
+            </div>
+
+            <div class="feature">   
+                <div class="feature__icon">
+                    <img src="./build/img/icon_hands.svg" alt="hands" class="feature__icon-img">
+                </div>
+
+                <h3 class="feature__title">Proveedores de confianza</h3>
+
+                <p class="feature__text">Trabajamos con las mejores marcas y fabricantes del sector para garantizar la calidad que mereces.</p>
+
+            </div>
+
+
+        </div>
+
+    </section>
 
     <!-- ======= products ======= -->
     <section class="products" id="productos">
         <div class="product__box">
-            <h2 class="products__heading">Productos</h2>
+            <h2 class="products__heading">Nuestros <span class="products__heading--blue"></span> Productos</h2>
 
             <div class="products__line"></div>
         </div>
 
         <div class="products__grid">
-            <a href="ceramicas.html">
+            <a href="seguridad.html">
                 <div class="product">
-                    <img src="./build/img/ceramica.jpg" alt="ceramica" class="product__img">
+                    <img src="./build/img/seguridad.jpg" alt="seguridad" class="product__img">
                     <div class="product__info">
-                        <h3 class="product__title">Ceramicas</h3>
+                        <h3 class="product__title">Seguridad Industrial</h3>
     
                         <i class="fa-solid fa-chevron-up product__arrow"></i>
                     </div>
@@ -162,12 +191,12 @@
                 </div>
             </a>
             
-            <a href="iluminacion.html">
+            <a href="herramientas.html">
                 <div class="product">
-                    <img src="./build/img/ilumination.jpg" alt="iluminacion" class="product__img" loading="lazy">
+                    <img src="./build/img/herramientas.jpg" alt="herramientas" class="product__img" loading="lazy">
     
                     <div class="product__info">
-                        <h3 class="product__title">Iluminación</h3>
+                        <h3 class="product__title">Herramientas Industriales</h3>
     
                         <i class="fa-solid fa-chevron-up product__arrow"></i>
                     </div>
@@ -175,10 +204,14 @@
                 </div>
             </a>     
         </div>
+
+        <div class="products__button">
+            <a href="productos.html" class="products__button-link">¡Cotiza ahora tú proyecto!</a>
+        </div>
     </section>
 
     <!-- ======= reviews ======= -->
-    <section class="testimoniales" id="reviews">    
+    <section class="testimoniales" id="testimoniales">    
         <div class="testimoniales__box">
             <h2 class="testimoniales__heading">Lo que nuestros <span class="testimoniales__heading--blue">Clientes</span> dicen</h2>
 
@@ -255,7 +288,7 @@
     </section>
 
     <!-- ======= contact ======= -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contacto">
         <div class="contact__box">
             <h2 class="contact__heading">Aquí estamos para ti,<br><span class="contact__heading--yellow"> ¡Contactanos!</span></h2>
 
